@@ -1,5 +1,6 @@
 import 'package:bookly/core/utils/style/style.dart';
 import 'package:bookly/feature/home/presentation/views/widgets/custom_app_bar.dart';
+import 'package:bookly/feature/home/presentation/views/widgets/custom_best_seller_listview.dart';
 import 'package:bookly/feature/home/presentation/views/widgets/custom_book_list_view.dart';
 import 'package:flutter/material.dart';
 
@@ -8,9 +9,9 @@ class HomeBodyView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        print('Building HomeBodyView');
 
-    return  SingleChildScrollView(
+    return  const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 10.0),
       child: Column(
         
         crossAxisAlignment:CrossAxisAlignment.start,
@@ -19,7 +20,10 @@ class HomeBodyView extends StatelessWidget {
         CustomAppBar(),
         CustomBooksListView(),
         SizedBox(height: 50,),
-        Text("Best Seller",style: Styles.titleMedium,)
+        Text("Best Seller",style: Styles.titleMedium,),
+                SizedBox(height: 20,),
+
+        CustomBestSellerListView(),
       ],),
     );
   }
