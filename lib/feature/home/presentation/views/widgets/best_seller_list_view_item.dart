@@ -3,6 +3,7 @@ import 'package:bookly/constant.dart';
 import 'package:bookly/core/utils/app_path/app_pathes.dart';
 import 'package:bookly/core/utils/assets/assets.dart';
 import 'package:bookly/core/utils/style/style.dart';
+import 'package:bookly/feature/home/presentation/views/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
@@ -47,16 +48,7 @@ class BestSellerListViewItem extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children:[ 
         Text("19.9 \$",style:Styles.textStyle14.copyWith(fontWeight: FontWeight.bold) ),
-        Row(
-          children: [
-            Icon(FontAwesomeIcons.solidStar,color:Color(0xffFFDD4F)),
-          SizedBox(width: 6.3,),
-      
-      Text("4.8",style: Styles.textStyle16,),
-      SizedBox(width: 5,),
-      Text("(254)",style: Styles.textStyle14.copyWith(color: Color(0xff707070)),)
-          ],
-        ),
+        const BookRating(),
       
       
         
