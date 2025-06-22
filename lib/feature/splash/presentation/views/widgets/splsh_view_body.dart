@@ -1,5 +1,5 @@
 import 'package:bookly/core/utils/assets/assets.dart';
-import 'package:bookly/core/utils/screenspath/app_screens.dart';
+import 'package:bookly/core/utils/app_path/app_pathes.dart';
 import 'package:bookly/feature/splash/presentation/views/widgets/custom_animated_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -57,7 +57,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void navigateToHome() {
      Future.delayed(const Duration(seconds: 3), () {
       
-    context.go(AppScreens.homePage);
+    context.go(AppPathes.homePage);
   });
   }
 

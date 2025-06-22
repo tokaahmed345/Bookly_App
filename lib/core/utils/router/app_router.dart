@@ -1,18 +1,22 @@
 
 
-import 'package:bookly/core/utils/screenspath/app_screens.dart';
-import 'package:bookly/feature/home/presentation/views/home.dart';
+import 'package:bookly/core/utils/app_path/app_pathes.dart';
+import 'package:bookly/feature/home/presentation/views/book_details_view.dart';
+import 'package:bookly/feature/home/presentation/views/home_view.dart';
 import 'package:bookly/feature/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRoute{
   static final router=GoRouter(routes: [
-GoRoute(path:AppScreens.splashScreen ,builder: (context,state){
-  return SplashView();
+GoRoute(path:AppPathes.splashScreen ,builder: (context,state){
+  return const  SplashView();
 }),
 
-GoRoute(path:AppScreens.homePage ,builder: (context,state){
-  return HomePage();
+GoRoute(path:AppPathes.homePage ,builder: (context,state){
+  return const HomePage();
+}),
+GoRoute(path:AppPathes.bookDetails ,builder: (context,state){
+  return const  BookDetailsView();
 }),
   ]);
 }
