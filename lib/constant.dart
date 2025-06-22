@@ -1,1 +1,1 @@
-const String KGTSectraFine='GT Sectra Fine';
+const  KGTSectraFine='GT Sectra Fine';
