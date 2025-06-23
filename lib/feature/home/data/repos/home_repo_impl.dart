@@ -4,6 +4,7 @@ import 'package:bookly/feature/home/data/models/book_model/book_model.dart';
 import 'package:bookly/feature/home/data/models/book_model/item.dart';
 import 'package:bookly/feature/home/data/repos/home_repo.dart';
 import 'package:dartz/dartz.dart';
+import 'package:dio/dio.dart';
 
 class HomeRepoImplementation extends HomeRepo {
   ApiService apiService;
@@ -16,8 +17,10 @@ try{
   var bookModel=BookModel.fromJson(data);
  return right(bookModel.items??[]);
 }catch(e){
-  return left(ServerFailure());
-
+if(e is DioException){
+  return left(ServerFailure.fromDioException(e));
+}
+return left( ServerFailure(e.toString()));
 }
 
 
