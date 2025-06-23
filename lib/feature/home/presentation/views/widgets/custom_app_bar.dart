@@ -1,4 +1,3 @@
-
 import 'package:bookly/core/utils/app_path/app_pathes.dart';
 import 'package:bookly/core/utils/assets/assets.dart';
 import 'package:flutter/material.dart';
@@ -11,10 +10,26 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  const EdgeInsets.only(left: 10.0,top: 30,),
+      padding: const EdgeInsets.only(
+        left: 10.0,
+        top: 30,
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [Image.asset(AppAssets.logo,height: 30,),IconButton(onPressed: (){GoRouter.of(context).push(AppPathes.searchview);}, icon: Icon(FontAwesomeIcons.magnifyingGlass,))],),
+        children: [
+          Image.asset(
+            AppAssets.logo,
+            height: 30,
+          ),
+          IconButton(
+              onPressed: () {
+                GoRouter.of(context).push(AppPathes.searchview);
+              },
+              icon: Icon(
+                FontAwesomeIcons.magnifyingGlass,
+              ))
+        ],
+      ),
     );
   }
 }

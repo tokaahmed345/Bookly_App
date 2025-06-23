@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class CustomAnimatedBuilder extends StatelessWidget {
@@ -14,11 +12,14 @@ class CustomAnimatedBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: sliderAnimation,
-      builder: (context,_){
+      builder: (context, _) {
         return SlideTransition(
-        position:sliderAnimation ,
-        
-        child: const Text("Read Books free",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),textAlign: TextAlign.center,));
+            position: sliderAnimation,
+            child: const Text(
+              "Read Books free",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+              textAlign: TextAlign.center,
+            ));
       },
     );
   }

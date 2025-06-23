@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-routerConfig: AppRoute.router,
+      routerConfig: AppRoute.router,
       debugShowCheckedModeBanner: false,
       //
       theme: ThemeData.dark().copyWith(
-        textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
-        scaffoldBackgroundColor: AppColors.kPrimaryColor),
-   
+          textTheme:
+              GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
+          scaffoldBackgroundColor: AppColors.kPrimaryColor),
     );
   }
 }
