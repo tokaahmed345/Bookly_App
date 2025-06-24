@@ -14,6 +14,8 @@ Future<void>fetchFeaturedBooks()async{
   result.fold((failure){
     emit(FeaturedBooksFailure(errorMessage: failure.errorMessage));
   }, (books){
+        print("✅ Books fetched: ${books.length}"); // 👈 ضيفي دي هنا
+
     emit(FeaturedBooksSuccess(books));
   });
 
