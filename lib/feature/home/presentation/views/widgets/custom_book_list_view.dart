@@ -1,3 +1,4 @@
+import 'package:bookly/core/widgets/custom_circular_indicator.dart';
 import 'package:bookly/core/widgets/custom_failure_widget.dart';
 import 'package:bookly/feature/home/presentation/manger/feautre_books_cubit/featured_books_cubit.dart';
 import 'package:bookly/feature/home/presentation/views/widgets/custom_list_view_item.dart';
@@ -27,9 +28,7 @@ class CustomBooksListView extends StatelessWidget {
             text: state.errorMessage,
           );
         } else {
-          return const Center(
-            child: CircularProgressIndicator(),
-          );
+          return const CustomCircularIndicator();
         }
       },
     );
