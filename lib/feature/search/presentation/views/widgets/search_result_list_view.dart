@@ -11,7 +11,8 @@ class SearchResultListView extends StatelessWidget {
     return ListView.builder(
       physics: const NeverScrollableScrollPhysics(),
       itemBuilder: (context, index) {
-        return const BookListViewItem();
+        // return const BookListViewItem();
+return Text("data");
       },
     );
   }

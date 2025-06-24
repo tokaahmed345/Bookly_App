@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         
         ),
          BlocProvider(create: (context
-        )=>NewestBooksCubit(getIt.get<HomeRepoImplementation>()))
+        )=>NewestBooksCubit(getIt.get<HomeRepoImplementation>())..fetchNewsetBooks())
       ],
       child: MaterialApp.router(
         routerConfig: AppRoute.router,
