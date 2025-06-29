@@ -41,4 +41,21 @@ return left( ServerFailure(e.toString()));
 }
 
   }
+  
+  @override
+  Future<Either<Failure, List<Item>>> fetchSimilarBooks({required String category}) async{
+    var data=await apiService.get(endpoint:'volumes?Filtering=free-ebooks&Sorting=relevance &q=subject:Programming');
+
+try{
+  var bookModel=BookModel.fromJson(data);
+ return right(bookModel.items??[]);
+}catch(e){
+if(e is DioException){
+  return left(ServerFailure.fromDioException(e));
 }
+return left( ServerFailure(e.toString()));
+}
+  }
+}
+
+

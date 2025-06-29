@@ -9,7 +9,7 @@ final String imageUrl;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 5.0),
+      padding: const EdgeInsets.symmetric(horizontal: 7.0),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
         child: AspectRatio(

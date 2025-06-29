@@ -1,30 +1,35 @@
+import 'package:bookly/core/functions/function.dart';
 import 'package:bookly/core/utils/colors/colors.dart';
 import 'package:bookly/core/widgets/custom_button.dart';
+import 'package:bookly/feature/home/data/models/book_model/item.dart';
 import 'package:flutter/material.dart';
 
 class BookActionButton extends StatelessWidget {
-  const BookActionButton({super.key});
-
+  const BookActionButton({super.key, required this.book});
+final Item book;
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 8.0),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: Row(
         children: [
-          Expanded(
+          const Expanded(
               child: CustomButton(
             backgroundColor: AppColors.white,
-            text: "19.9\$",
+            text: "Free",
             textColor: Colors.black,
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(16), bottomLeft: Radius.circular(16)),
           )),
           Expanded(
               child: CustomButton(
+                onPressed: ()async{
+                 launchCustomUrl(context, book.volumeInfo.previewLink!);
+                },
             backgroundColor: AppColors.buttonColor,
-            text: "Free Preview",
+            text:  getText(book),   
             textColor: Colors.white,
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
                 topRight: Radius.circular(16),
                 bottomRight: Radius.circular(16)),
           )),
@@ -32,4 +37,12 @@ class BookActionButton extends StatelessWidget {
       ),
     );
   }
+  
+ String getText(Item book) {
+  if(book.volumeInfo.previewLink==null){
+    return 'Not Available';
+      }else{
+        return 'Preview';
+      }
+ }
 }

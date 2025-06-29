@@ -18,7 +18,7 @@ class NewsetBooksListView extends StatelessWidget {
       padding: EdgeInsets.zero,
       physics: const NeverScrollableScrollPhysics(),
       itemBuilder: (context, index) {
-        return  BookListViewItem(imageUrl: state.books[index].volumeInfo.imageLinks!.thumbnail,book: state.books[index],);
+        return  BookListViewItem(imageUrl: state.books[index].volumeInfo.imageLinks?.thumbnail??" ",book: state.books[index],);
       });
 }else if(state is NewsetBooksFailure){
   return CustomFailureWidget(text: state.errorMessage);

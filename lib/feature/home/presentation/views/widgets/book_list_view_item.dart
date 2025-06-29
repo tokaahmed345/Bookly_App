@@ -19,7 +19,7 @@ final Item book;
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: GestureDetector(
         onTap: () {
-          GoRouter.of(context).push(AppPathes.bookDetails);
+          GoRouter.of(context).push(AppPathes.bookDetails,extra: book);
         },
         child: Row(
           children: [

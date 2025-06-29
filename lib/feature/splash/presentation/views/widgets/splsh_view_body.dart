@@ -35,9 +35,10 @@ class _SplashViewBodyState extends State<SplashViewBody>
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+
       children: [
-        Lottie.asset(AppAssets.splashLogo, fit: BoxFit.contain, width: 100),
+        Image.asset(AppAssets.splashLogo,),
         const SizedBox(
           height: 4,
         ),
