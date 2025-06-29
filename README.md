@@ -10,9 +10,9 @@
   <h1 style="color: #1e88e5;">📚 Bookly - Flutter Book Reader App</h1>
 
   <div style="text-align: center; margin-bottom: 25px;">
-    <img src="https://via.placeholder.com/200x300.png?text=Bookly+Home" alt="App Home Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
-    <img src="https://via.placeholder.com/200x300.png?text=Book+Details" alt="Book Details Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
-    <img src="https://via.placeholder.com/200x300.png?text=Search+Books" alt="Search Books Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+    <img src="screenshots/Screenshot_1751237958.png" alt="App Home Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+    <img src="screenshots/Screenshot_1751237964.png" alt="Book Details Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+    <img src="screenshots/Screenshot_1751237970.png" alt="Search Books Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
   </div>
 
   <h2 style="color: #1e88e5;">Introduction</h2>
@@ -87,12 +87,6 @@ pubspec.yaml               # Project dependencies
 
   <h2 style="color: #1e88e5;">Usage</h2>
   <p>Open the app to browse books fetched from API, search by title or author, and read books via provided links.</p>
-
-  <h2 style="color: #1e88e5;">Contributors</h2>
-  <p><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" style="color:#1e88e5; text-decoration:none;">Your Name</a> - Lead Developer</p>
-
-  <h2 style="color: #1e88e5;">License</h2>
-  <p>Licensed under <strong>MIT License</strong>. See <code style="background:#eee; padding:3px 6px; border-radius:4px;">LICENSE</code> file for details.</p>
 
 </body>
 </html>
