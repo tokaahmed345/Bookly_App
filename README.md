@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>README - Bookly Project</title>
-</head>
+
 <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: 20px auto; color: #333; line-height: 1.6; background-color: #f9f9f9; padding: 0 15px;">
 
   <h1 style="color: #1e88e5;">📚 Bookly - Flutter Book Reader App</h1>
