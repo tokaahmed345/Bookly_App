@@ -9,6 +9,8 @@
     <img src="screenshots/Screenshot_1751237958.png" alt="App Home Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
     <img src="screenshots/Screenshot_1751237964.png" alt="Book Details Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
     <img src="screenshots/Screenshot_1751237970.png" alt="Search Books Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+        <img src="screenshots/Screenshot_1751312508.png" alt="Search Books Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+        <img src="screenshots/Screenshot_1751312513.png" alt="Search Books Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
   </div>
 
   <h2 style="color: #1e88e5;">Introduction</h2>
