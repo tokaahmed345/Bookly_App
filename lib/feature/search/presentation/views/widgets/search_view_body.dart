@@ -2,13 +2,14 @@ import 'package:bookly/core/utils/style/style.dart';
 import 'package:bookly/feature/search/presentation/views/widgets/search_result_list_view.dart';
 import 'package:bookly/feature/search/presentation/views/widgets/search_text_field.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SearchViewBody extends StatelessWidget {
   const SearchViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScrollView(
+    return  const CustomScrollView(
       slivers: [
         SliverFillRemaining(
           child: Padding(
@@ -16,11 +17,12 @@ class SearchViewBody extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SearchTextField(),
-                SizedBox(
+                
+                                    SearchTextField(),
+               SizedBox(
                   height: 16,
                 ),
-                Text(
+              Text(
                   "Search Result ",
                   style: Styles.textStyle18,
                 ),

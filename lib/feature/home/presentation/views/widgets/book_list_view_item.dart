@@ -37,7 +37,7 @@ final Item book;
                   SizedBox(
                       width: MediaQuery.of(context).size.width * .5,
                       child: Text(
-                        "${book.volumeInfo.title} ",
+                        "${book.volumeInfo.title??'No Title'} ",
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: Styles.textStyle20
@@ -47,7 +47,7 @@ final Item book;
                     height: 3,
                   ),
                    Text(
-                    book.volumeInfo.authors![0],
+                    book.volumeInfo.authors?[0]??"No Author",
                     style: Styles.textStyle14,
                   ),
                   const SizedBox(
