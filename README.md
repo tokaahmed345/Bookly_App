@@ -3,7 +3,7 @@
 
 <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: 20px auto; color: #333; line-height: 1.6; background-color: #f9f9f9; padding: 0 15px;">
 
-  <h1 style="color: #1e88e5;">📚 Bookly - Flutter Book Reader App</h1>
+  <h1 style="color: #1e88e5;">📚 Bookly - Flutter Book Reader App </h1>
 
   <div style="text-align: center; margin-bottom: 25px;">
     <img src="screenshots/Screenshot_1751237958.png" alt="App Home Screen" style="width: 200px; height: auto; margin: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
